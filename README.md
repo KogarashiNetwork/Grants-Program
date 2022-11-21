@@ -18,6 +18,7 @@
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
 - [:mailbox_with_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
 - [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
+- [:moneybag: Referral Program](#moneybag-referral-program) 
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
@@ -29,7 +30,7 @@
 
 ## :wave: Introduction
 
-As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to **Polkadot, Kusama, [Substrate](https://github.com/paritytech/substrate) and [ink!](https://github.com/paritytech/ink)**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
+As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to **Polkadot and Kusama**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
 
 ### Guidelines
 
@@ -47,6 +48,7 @@ Additionally, it must fulfill the following requirements:
 
 - All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT or Unlicense are also acceptable.
 - We do not award grants for projects that have been the object of a successful token sale.
+- Applications must not mention a specific token. Furthermore, the focus of the application should lie on the software that is being implemented/research being carried out as part of the grant, and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
@@ -100,6 +102,8 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
+- [Nabil Abdellaoui](https://github.com/randombishop)
+- [Matteo Casonato](https://github.com/0xCaso) 
 - [David Hawig](https://github.com/Noc2)
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
@@ -213,6 +217,12 @@ Please note that:
 - The 1-month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit and point this out in your application.
 - Please bear in mind that the Grants Committee might be stricter in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
 - Maintenance Grants are only awarded for fixed timeframes. The requested duration needs to be specified in the application.
+
+## :moneybag: Referral Program
+
+We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
+
+In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala). 
 
 ## :bulb: Help
 
