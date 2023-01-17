@@ -153,9 +153,9 @@ Through this grant, we are going to develop the blockchain which supports confid
 
 ### Overview
 
-- **Total Estimated Duration:** 6.5 months
+- **Total Estimated Duration:** 7.5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 45,000 DAI
+- **Total Costs:** 47,500 DAI
 
 ### Milestone 1 | Confidential Transfers
 
@@ -177,13 +177,32 @@ In `Milestone 1`, we are going to implement `confidential transfer` pallet on to
 | 3. | `plonk` pallet | We are going to implement `plonk` pallet which allows us to use `plonk` on `Substrate`. In confidential smart contracts execution, the `plonk` need to support `lookup` and `aggregation proof`.|
 | 4. | `confidential-transfer` pallet | We are going to implement `confidential-transfer` pallet which allows us to send transactions without revealing any information of it. |
 
-### Milestone 2 | Confidential Smart Contract Executions
+### Milestone 2 | Confidential Transactions Extension
 
-- **Estimated Duration:** 3 month
+- **Estimated Duration:** 1.5 month
 - **FTE:**  2
-- **Costs:** 25,000 DAI
+- **Costs:** 12,500 DAI
 
-In `Milestone 2`, we are going to implement `confidential smart contract execution` pallet on top of [`contracts`](https://github.com/paritytech/substrate/tree/master/frame/contracts) pallet and [`ink!`](https://github.com/paritytech/ink).
+In `Milestone 2`, we are going to implement `RedDSA`, optimize `Jubjub` curve and extend `plonk`.   The optimization can improve usability.
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both `inline documentation` of the code and a `basic tutorial` that explains how users send the `confidential transfers`. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide Dockerfiles that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article/tutorial/workshop that explains |
+| 1. | `RedDSA` implementation | We are going to implement `RedDSA` to `confidential_transfer` pallet. `RedDSA` implementation allows us to generate one time signing key to encrypt transaction params. One time signing key doesn't have permission to transfer asset but it descrypts transaction so this makes our protocol auditable and AML robust. The specification is aligned with zcash [sapling 5.4.6](https://github.com/zcash/zips/blob/main/protocol/sapling.pdf) |
+| 2. | `Jubjub` curve optimization | `Jubjub` curve optimization allows us to perform elliptic curve arithmetic quickly. In our scheme, zero-knowledge prover time is latency when users send transaction and verification time is gas cost on chain. Specifically, we implement [Twisted Edwards Curves Revisited](https://iacr.org/archive/asiacrypt2008/53500329/53500329.pdf), [Jacobian Coordinates](https://eprint.iacr.org/2014/1014.pdf) and [wNAF](https://www.scitepress.org/papers/2014/50587/50587.pdf), [pippenger](https://cr.yp.to/papers/pippenger.pdf) |
+| 3. | `plonk` extension | We are going to implement `plookup` to [`plonk`](https://github.com/zero-network/dusk-plonk). `plonk` extension allows us to reduce constraints gate of zk-Snarks circuit and install VM rollup. We implement [plookup](https://eprint.iacr.org/2020/315.pdf). |
+
+### Milestone 3 | Confidential Smart Contract Executions
+
+- **Estimated Duration:** 2.5 month
+- **FTE:**  2
+- **Costs:** 15,000 DAI
+
+In `Milestone 3`, we are going to implement `confidential smart contract execution` pallet on top of [`contracts`](https://github.com/paritytech/substrate/tree/master/frame/contracts) pallet and [`ink!`](https://github.com/paritytech/ink).
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -199,13 +218,13 @@ In `Milestone 2`, we are going to implement `confidential smart contract executi
 | 5. | `zk-contracts` pallet | We are going to implement `zk-contracts` on top of [`contract`](https://github.com/paritytech/substrate/tree/master/frame/contracts) pallet which allows runtime to execute deployed contracts.|
 | 6. | `zk-contracts-rpc` pallet | We are going to implement `zk-contracts-rpc` pallet on top of [`pallet-contracts-rpc`](https://github.com/paritytech/substrate/tree/master/frame/contracts/rpc) pallet which allows the blockchain to have interface interacting with deployed contracts.|
 
-### Milestone 3 | Confidential Transaction Wallet
+### Milestone 4 | Confidential Transaction Wallet
 
 - **Estimated Duration:** 1.5 month
 - **FTE:**  2
 - **Costs:** 10,000 DAI
 
-In `Milestone 3`, we are going to implement `wallet` which provides the user to interact with blockchain, send transactions and manage the secret on locally.
+In `Milestone 4`, we are going to implement `wallet` which provides the user to interact with blockchain, send transactions and manage the secret on locally.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
